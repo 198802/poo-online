@@ -1,0 +1,86 @@
+Public class selecciónfutboll// Clase padre o SuperClase
+
+{
+// Atributos SuperClase
+Protected int id;
+Protected String nombre;
+Protected String Apellido;
+Protected int edad;
+// constructor, getter y setter
+// metodos
+Public void concentarse() {
+}
+Public void viajar() {
+    }
+}
+Public class futbolista extends seleccionfutbol
+{
+Private int Dorsal;
+Public futbolista() {
+}
+//getter setter
+ Public void jugarpartido() {
+}
+Public void entrenar() {
+    }
+}
+Public class entrenador extends SeleccionFutbol
+{
+Private String  idFederacion;
+Public Entrenador() {
+Super();
+}
+// getter y setter
+}
+Public void DirigirEntreno() {
+}
+}
+Public class masajista  extends seleccionFutbol
+{
+Private String Titulacion;
+Private int aniosExperiencia;
+
+Public Masajista() {
+       Super();
+}
+// getter y setter
+Public void darmasaje() {
+}
+}
+// Entrenamiento
+System.out.println(“nEntrenamiento : Solamente el entrenador y el futbolista tiene met
+System.out.println(delbosque.getNombre()+ “ “+iniesta.getApellidos()+”  -“);
+Iniesta.entrenar();
+
+// Mensaje
+System.out.println(“nMasaje : Solamente el masajista tiene el método para realizar el masaje:”);
+System.out.println(RaulSuarez.getNombre()+ “ “+iRaulsuarez.getApellidos()+”  -“);
+Raulsuarez.DarMasaje();
+
+
+
+// Partido de Futboll
+System.out.println(“nPartido de Futboll : Solamente el entrenador y el futbolista tiene métodos para el partido de futboll:”);
+System.out.println(delBosque.getNombre()+ “ “+delBosque.getApellidos()+”  -“);
+delBosque.Dirigir partido();
+System.out.println(Iniesta.getNombre()+ “ “+iniesta.getApellidos()+”  -“);
+Iniesta.jugarpartido();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

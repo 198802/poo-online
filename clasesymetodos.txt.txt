@@ -1,0 +1,72 @@
+public class Operacioness {
+    
+    public static void main(String[] args) {
+    
+        Scanner teclado = new Scanner(System.in); //vreamos un objeto para ingresar datos
+        int alumno,num1,num2,u1,u2,u3,cantidad; //declaramos varibles para asignar parametros
+        
+        operaciones ejercicios=new operaciones(); //instancia de la clase operaciones
+        ejercicios.mensaje();
+        System.out.println("\nNota del alumno; ");
+        alumno = teclado.nextInt();//leemos
+        ejercicios.nota(alumno);//llamamos al metodo y pasamos parametros
+        System.out.println("\nDos numeros a sumar; ");
+        num1 = teclado.nextInt();
+        num2 = teclado.nextInt();
+        System.out.println("La suma es; "+ejercicios.suma(num1,num2));//llamamos al metodo y pasamos parametros
+        System.out.println("\nCantidad de conteo; ");
+        cantidad = teclado.nextInt();
+        ejercicios.numeros(cantidad);//llamamos al metodo y pasamos parametros
+       System.out.println("\ningrese tres numeros;  ");
+        u1 = teclado.nextInt();
+        u2 = teclado.nextInt();
+        u3 = teclado.nextInt();
+        ejercicios.summul(u1, u2,u3);//llamamos al metodo y pasamos parametros
+        
+        
+        
+    }
+public static class operaciones{
+    
+    //primer metodo
+    public void mensaje()
+    {
+        System.out.println("Soy el mejor Programador");//Método vacio
+    }
+    //segundo metodo
+    public void nota(int numero)
+    {
+        if (numero >=70){
+            System.out.println("APROVADO");
+        }
+        else
+        {
+            System.out.println("Reprovado");
+        }
+        
+    }
+    //tercer metodo
+    public int suma(int n, int m){
+        int s;
+        s=n+m;
+        return s;
+        
+    }
+    //cuarto metodo
+    public void numeros(int x){
+        for(int i=0; i<=x;i++)
+        {
+            System.out.println(i);
+        }
+    }
+    //quinto metodo
+    public void summul(int q,int w, int e ){
+        double t,mu;
+        t=q*w;
+        mu=t*e;
+        System.out.println(q+"La suma de "+e+"es :"+t);
+        System.out.println("por "+e+"es :"+mu);
+    }
+}
+    
+}
